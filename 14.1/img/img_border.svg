@@ -1,0 +1,18 @@
+<svg width="424" height="424" viewBox="0 0 424 424" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2.92999H3V102.93H2V2.92999Z" stroke="#FFCC00" stroke-width="4"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2H102V3H2V2Z" stroke="#FFCC00" stroke-width="4"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M419 2.93799H420V103H419V2.93799Z" stroke="#FFCC00" stroke-width="4"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M320 2H420V3.001H320V2Z" stroke="#FFCC00" stroke-width="4"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 319.062H3V419.062H2V319.062Z" stroke="#FFCC00" stroke-width="4"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 419H102V420H2V419Z" stroke="#FFCC00" stroke-width="4"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M419 319H420V419.062H419V319Z" stroke="#FFCC00" stroke-width="4"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M320 419H420V420H320V419Z" stroke="#FFCC00" stroke-width="4"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 17.5H405.5V405.5H17.5V17.5Z" stroke="#FFCC00"/>
+    <rect x="18" y="18" width="387" height="387" fill="url(#pattern0)"/>
+    <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0" transform="scale(0.00257732)"/>
+        </pattern>
+        <image id="image0" width="388" height="388" xlink:href="img.png"/>
+    </defs>
+</svg>
