@@ -6063,6 +6063,8 @@ body {
 }
 
 .tab-social-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 30px;
   height: 30px;
   border: solid 2px #cdcdcd;
@@ -6076,6 +6078,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.tab-social-wrapper:hover {
+  background-color: #cdcdcd;
+}
+
+.tab-social-wrapper:hover .social-icon {
+  color: white;
 }
 
 .tab__text-block {
@@ -6119,6 +6129,7 @@ body {
 .social-icon {
   font-size: 14px;
   text-align: center;
+  color: #cdcdcd;
 }
 
 /*  Tab arrows   */

@@ -110,6 +110,7 @@ body{
     }
 
     &-social-wrapper {
+        box-sizing: border-box;
         width: 30px;
         height: 30px;
         border: solid 2px #cdcdcd;
@@ -117,6 +118,14 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover{
+            background-color: #cdcdcd;
+
+            & .social-icon{
+                color: white;
+            }
+        }
 
     }
 
@@ -162,6 +171,7 @@ body{
 .social-icon {
     font-size: 14px;
     text-align: center;
+    color: #cdcdcd;
 }
 
 
