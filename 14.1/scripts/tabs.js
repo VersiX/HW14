@@ -11,7 +11,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("tab");
+    var slides = document.getElementsByClassName("tab-wrapper");
     var dots = document.getElementsByClassName("tab-button");
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
