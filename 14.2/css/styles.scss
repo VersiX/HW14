@@ -1,21 +1,66 @@
 @import 'fonts';
 
+$font-title-small: bold 40px "Raleway";
+$font-title-medium: 900 60px "Raleway";
+$font-title-big: bold 60px "Raleway";
+$font-article: 300 17px "Raleway";
+
+
 body{
     margin: 0;
-    background-color: #f9f8fb;
+    
 }
 
-.outer-container{
+.section{
     width: 1200px;
     margin: 0 auto;
 }
 
+.container{
+
+    &--header{
+        background-color: #f9f8fb;
+    }
+
+    &--about{
+        background-color: #00b0b0;
+    }
+
+
+    &--services{
+        background-color: #70bfff;
+    }
+    
+    &--gallery{
+        background-color: #ffe92f;
+    }
+
+    &--blog{
+        background-color: #b07cf7;
+    }
+
+
+}
+
+
+
+
 .header{
+    &-container{
+        background-color: #f9f8fb;
+    }
+
+
     position: relative;
-    height: 869.6px;
+    height: 800px;
     background-image: url("../img/strawberries.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right, bottom;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &-top{
         width: 100%;
@@ -28,7 +73,7 @@ body{
     &__scroll{
         position: absolute;
         bottom: 69px;
-        left: 588px;
+        left: 50%;
         align-self: center;
     }
     
@@ -50,6 +95,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-right: 15px;
 
     &-item{
         font-size: 16px;
@@ -62,59 +108,381 @@ body{
 
 }
 
-
-.top__img{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-
-}
-
-.article{
-    width: 1170px;
-    height: 1000px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-
-
-.article__title{
-    font-size: 60px;
-    font-family: "Raleway";
-    font-weight: 900;
+.title-text{
+    font: $font-title-medium;
     color: rgb(38, 38, 38);
     margin: 0;
-    text-align: left;
+    margin-bottom: 25px;
+    &--small{
+        font: $font-title-small;
+    }
+
+    &--big {
+        font: $font-title-big;
+    }
+
+    &--white{
+        color: white;
+    }
 }
 
 .article__text{
-    font-size: 17px;
-    font-family: "Raleway";
+    font: $font-article;
     color: rgb(38, 38, 38);
-    line-height: 1.588;
-    width: 368px;
-    margin-top: 34px;
-    margin-bottom: 34px;
+    line-height: 27px;
+    margin-bottom: 31px;
+
+    
+    &--white{
+        color: white;
+    }
+
 }
 
+.text-align-center {
+    text-align: center;
+}
+
+
 .article__button{
-    width: 200px;
     height: 55px;
     background-color: rgb(255, 96, 51);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
     font-size: 20px;
     font-family: "Raleway";
     color: rgb(255, 255, 255);
-    line-height: 1.35;
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+
+    &:hover{
+        transition: all 0.2s ease;
+        text-decoration: none;
+        color: white;
+        box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+
+    }
+
+    &--blue{
+        background-color: #5585a2;
+        margin-top: 50px;
+        margin-bottom: 120px;
+    }
+
+    &--green{
+        background-color: #96b92c;
+    }
+
+    &--red{
+        background-color: #f72b3b;
+    }
+}
+
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.img-aside{
+    width: 100%;
+}
+
+
+
+
+.services{
+
+    &-container__title {
+        font-size: 90px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        height: 100%;
+        text-align: center;
+    
+        background-image: url(../img/pomidorki.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    
+        display: flex;
+        align-items: center;
+    }
+
+    &-list-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    
+    
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+        
+    }
+
+    &-list-item__name {
+        width: 75%;
+        height: 100px;
+        font-size: 20px;
+        color: rgb(38, 38, 38);
+        font-weight: bold;
+        text-align: center;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-icon {
+        &-container {
+            box-sizing: border-box;
+            width: 25%;
+            height: 100px;
+            border-left: solid 1px rgb(157, 157, 157);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &__img{
+            fill-rule: evenodd; 
+            fill: rgb(38, 38, 38);
+        }
+    }
+
+    &-row{
+        min-height: 790px;
+    }
+
+}
+
+.gallery__img{
+    width: 100%;
+}
+
+.subscribe{
+
+    &-form{
+        margin-top: 140px;
+        margin-bottom: 163px;
+    }
+
+    &-input{
+        width: 100%;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(38, 38, 38);
+        font-size: 15px;
+        font-family: "Raleway";
+        color: rgba(38, 38, 38, 0.502);
+        line-height: 1.8;
+        height: 55px;
+        vertical-align: middle;
+
+        &::placeholder{
+            font-size: 15px;
+            font-family: "Raleway";
+            color: rgba(38, 38, 38, 0.502);
+            line-height: 1.8;
+            vertical-align: middle;
+
+        }
+
+    }
+
+}
+
+.row-lg-2{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+.column{
+    position: relative;
+
+    &>div{
+        position: absolute;
+        z-index: 1;
+    }
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+
+        &::after{
+            content:'';
+            position:absolute;
+            left:0; top:0;
+            width:100%; height:100%;
+            display:inline-block;
+        
+            background: linear-gradient(0deg, rgba(34,34,34,0.9) 0%, rgba(34,34,34,0.5) 30%, rgba(0,0,0,0) 100%); 
+            transition: all 0.2s ease-in-out;
+        
+        }
+    }
+
+}
+
+.blog{
+
+
+    &-date{
+        border-radius: 5px;
+        background-color: rgb(38, 38, 38);
+        opacity: 0.502;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        top: 30px;
+        left: 30px;
+
+        & *{
+            opacity: 1;
+        }
+
+        &__num {
+            font-size: 32px;
+            font-family: "Raleway";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 0.781;    
+        }
+
+        &__mon {
+            font-size: 21px;
+            font-family: "Raleway";
+            font-weight: 900;
+            color: rgb(255, 255, 255);
+            line-height: 1.19;
+    
+        }
+
+    }    
+
+
+    &-text {
+        left: 20px;
+        bottom: 20px;
+
+        &__title{
+            font-size: 20px;
+            font-family: "Raleway";
+            color: white;
+            font-weight: bold;
+            line-height: 1.25;
+        }
+        &__sub-title{
+            font-size: 13px;
+            font-family: "Raleway";
+            color: white;
+            font-weight: lighter;
+            line-height: 1.25;
+        }
+    
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+}
+
+// .pic {
+    // width: 375px;
+    // height: 326px;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px)
+{
+    /* temporary */
+    .header-top{
+        display: none;
+    }
+
+    .section{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header{
+
+
+        &__scroll {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:991px)
+{
+    .services{
+
+        &-container__title {
+            background: none;
+            
+        
+        }
+
+    }
+
+}
+
+
+
+@media screen and (max-width:855px)
+{
+
+    
+    .header{
+        height: auto;
+        background: none;
+        padding-top: 200px;
+    }
+
 }
 
 
