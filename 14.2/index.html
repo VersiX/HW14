@@ -5,29 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <div class="header-top" id="navbar">
+        <h1 class="logo logo--header">
+            Cahee
+        </h1>
+        <div class="menu" id="topnav">
+            <div class="menu-item"><a href="#home" class="menu__link">home</a></div>
+            <div class="menu-item"><a href="#about" class="menu__link">about</a></div>
+            <div class="menu-item"><a href="#services" class="menu__link">services</a></div>
+            <div class="menu-item"><a href="#gallery" class="menu__link">gallery</a></div>
+            <div class="menu-item"><a href="#blog" class="menu__link">blog</a></div>
+            <div class="menu-item"><a href="#contact" class="menu__link">contact</a></div>
+            
+        </div>
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
-    <div class="container--header">
+    <div class="container--header" id="home">
         <header class="container-fluid header section">
 
-            <div class="header-top">
-                <h1 class="logo logo--header">
-                    Cahee
-                </h1>
-                <div class="menu">
-                    <div class="menu-item">home</div>
-                    <div class="menu-item">about</div>
-                    <div class="menu-item">services</div>
-                    <div class="menu-item">gallery</div>
-                    <div class="menu-item">blog</div>
-                    <div class="menu-item">contact</div>
-                </div>
-            </div>
+
 
 
 
@@ -46,8 +52,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="" class="article__button">get free now</a>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="" class="article__button article__button--header">get free now</a>
                 </div>
             </div>
 
@@ -62,18 +68,16 @@
         </header>
     </div>
 
-    <div class="container--about">
+    <div class="container--about" id="about">
 
         <section class="section">
 
             <div class="container-fluid">
 
                 <div class="row">
-                    <div class="col-6 img_wrapper">
-                        <img src="img/strawberries2.png" alt="" class="img-aside">
-                    </div>
 
-                    <div class="col-5 offset-1 article">
+
+                    <div class="col-lg-5 offset-lg-1 order-lg-1 article">
                         <h2 class="title-text--big title-text--white">
                             About Us
                         </h2>
@@ -88,8 +92,13 @@
                             doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
                         </div>
+
+
                     </div>
 
+                    <div class="col-lg-6 img-wrapper">
+                        <img src="img/strawberries2.png" alt="" class="img-aside">
+                    </div>
                 </div>
 
 
@@ -102,7 +111,7 @@
     </div>
 
 
-    <div class="container--services">
+    <div class="container--services" id="services">
 
         <div class="section">
 
@@ -224,7 +233,7 @@
     </div>
 
 
-    <div class="container--gallery">
+    <div class="container--gallery" id="gallery">
 
 
         <div class="container">
@@ -249,7 +258,7 @@
 
 
 
-            <div class="row">
+            <div class="row gallery-gallery">
                 <div class="col-lg-8 col-md-4">
                     <img class="gallery__img" src="img/peach.png" alt="">
                 </div>
@@ -297,7 +306,7 @@
     </div>
 
 
-    <div class="container--subscribe">
+    <div class="container--subscribe" id="subscribe">
         <form class="subscribe-form" action="">
             <div class="container">
                 <div class="row">
@@ -314,10 +323,8 @@
                             placeholder="Your email address...">
 
                     </div>
-                    <div class="row">
-                        <div class="row-lg-2 align-self-end">
-                            <input type="submit" value="Subscribe" class="article__button article__button--green">
-                        </div>
+                    <div class="col-lg-2 align-self-end">
+                        <input type="submit" value="Subscribe" class="article__button article__button--green">
                     </div>
 
                 </div>
@@ -326,15 +333,10 @@
 
 
 
-
-
-
     </div>
 
 
-
-
-    <div class="container--blog">
+    <div class="container--blog" id="blog">
 
         <div class="container">
 
@@ -361,8 +363,10 @@
 
 
 
-            <div class="row">
-                <div class="col-4">
+            <div class="row blog-content">
+
+
+                <div class="col-md-4 blog-item">
                     <div class="column">
 
                         <img class="blog__img" src="img/kiwi_drink.png" alt="">
@@ -390,9 +394,7 @@
                 </div>
 
 
-
-
-                <div class="col-4">
+                <div class="col-md-4 blog-item">
 
                     <div class="column">
 
@@ -418,16 +420,10 @@
 
 
                     </div>
-
-
-
-
                 </div>
 
 
-
-
-                <div class="col-4">
+                <div class="col-md-4 blog-item">
                     <div class="column">
                         <img class="blog__img" src="img/raspberry.png" alt="">
 
@@ -456,7 +452,7 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-2 offset-lg-5">
+                <div class="col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-sm-6 offset-sm-3">
                     <a class="article__button article__button--red" href="">
                         VIEW MORE
                     </a>
@@ -473,9 +469,145 @@
     </div>
 
 
+    <div class="container--contact" id="contact">
+
+        <footer class="container">
+
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <h2 class="title-text--big">
+                        Contact
+                    </h2>
+                    <div class="article__text">
+                        For new projects, ideas, business or anything
+                        you'd like to discuss, contact with me!
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="container footer-wrapper">
+                <div class="row">
+                    <div class="col-md-5">
+                        <form action="">
+                            <input type="text" class="footer-form__input" placeholder="Your name">
+                            <input type="email" class="footer-form__input" placeholder="Email">
+                            <input type="text" class="footer-form__input" placeholder="Your phone number"
+                                data-mask="+00 (000) 000 00 00">
+                            <textarea name="" id="" cols="30" rows="10"
+                                class="footer-form__input footer-form__input--big"
+                                placeholder="Your message..."></textarea>
+
+
+                        </form>
 
 
 
+                    </div>
+
+
+
+                    <div class="col-md-4 offset-md-2">
+
+                        <div class="footer-contact-item">
+                            <div class="article__text footer-contact__title">
+                                ADDRESS
+                            </div>
+                            <div class="article__text footer-contact__data">
+                                123 City name, Street, City, Country
+                            </div>
+                        </div>
+
+
+                        <div class="footer-contact-item">
+                            <div class="article__text footer-contact__title">
+                                EMAIL
+                            </div>
+                            <div class="article__text footer-contact__data">
+                                cahee@domain.com
+                            </div>
+                        </div>
+
+
+                        <div class="footer-contact-item">
+                            <div class="article__text footer-contact__title">
+                                PHONE
+                            </div>
+                            <div class="article__text footer-contact__data">
+                                +012 345 6789
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </footer>
+
+
+        <div class="container-fluid footer-footer">
+            <div class="row footer-footer-wrapper">
+                <div class="col-sm-4">
+                    <div class="footer-footer__copyright">
+                        &copy; 2015 Company. All right reserved.
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="footer-footer__logo">
+                        Cahee
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="footer-footer__with-love">
+                        Made with <span class="love-red">love</span> by Auskteez
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./plugins/jquery.mask.min.js"></script>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
+        } 
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "menu-item") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu-item";
+            }
+        }
+    </script>
 </body>
 
 </html>
